@@ -1,4 +1,5 @@
 import Note from './note';
+import AddNewNote from './AddNewNote';
 
 function notesList(props){
 	return(
@@ -12,6 +13,7 @@ function notesList(props){
 					/>
 				)
 			}
+			<AddNewNote />
 		</div>
 	)
 }
