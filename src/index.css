@@ -36,12 +36,17 @@ code {
   padding: 1rem;
   border-radius: 15px;
   outline: none;
+  white-space: pre-wrap;
 }
 
 .note-footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.delete:hover{
+  cursor: pointer;
 }
 
 .note.new{

@@ -9,7 +9,8 @@ function notesList(props){
 					key={note.id}
 					id={note.id} 
 					text={note.text} 
-					date={note.date} 
+					date={note.date}
+					handleDel={props.handleDel}
 					/>
 				)
 			}
