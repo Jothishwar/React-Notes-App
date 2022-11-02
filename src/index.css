@@ -35,6 +35,7 @@ code {
   justify-content: space-between;
   padding: 1rem;
   border-radius: 15px;
+  outline: none;
 }
 
 .note-footer{

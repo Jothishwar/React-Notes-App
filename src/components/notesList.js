@@ -13,7 +13,7 @@ function notesList(props){
 					/>
 				)
 			}
-			<AddNewNote />
+			<AddNewNote handleSave={props.handleSave} />
 		</div>
 	)
 }
