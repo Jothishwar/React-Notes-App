@@ -27,6 +27,8 @@ function App() {
     }
   ])
 
+  const [searchText,setSearchText]=useState(''); 
+
   const handleSave = (text) => {
     console.log(text);
     const date=new Date();
@@ -46,9 +48,9 @@ function App() {
 
   return (
     <div className="container">
-      <Search />
+      <Search handleSearch={setSearchText} />
       <NotesList 
-        notes={notes} 
+        notes={notes.filter((note) => note.text.toLowerCase().includes(searchText))} 
         handleSave={handleSave}
         handleDel={handleDel} />
     </div>
